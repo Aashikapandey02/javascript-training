@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Para">my name is Aashika </p>
+<h1 id="head">
+   Instruction
+</h1>
+    <button type="button" onclick="changecolor()">changecolor</button>
+        <button type="button" onclick="Showheading()">show Element</button>
+   
+    <script>
+        let head=document.querySelector("#head")
+        function changecolor(){
+            let para= document.getElementById("para")
+            head.style.display="none"
+            para.style.backgroundColor="red"
+        }
+        function Showheading(){
+            head.style.display="block"
+        }
+
+        //creating new element using js
+        let newElement= document.createdElement("p")
+        newElement.innerText="this is the from js"
+
+        //to add the newly created elemnt to html front js
+        document.body.appendChild(newElement)
+    </script>
+</body>
+</html>
