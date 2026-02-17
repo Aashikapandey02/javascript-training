@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p id="head1"></p>
+     <button onclick="changecontent()">Load content</button>
+     <button onclick="removecontent()">Remove content</button>
+    <script>
+        function changecontent(){
+           document.getElementById("head1").innerHTML="changed content after click event"
+          
+        }
+        function removecontent(){
+            document.getElementById("head1").innerHTML=""
+        }
+        // document.getElementById("head1").innerHTML=<b>hello world</b>//we can change content like with tag(bold,italic)
+         //document.getElementById("head1").innerText=<b>hello world</b>//if we put tag it will not change 
+        //alerthead1
+    </script>
+</body>
+</html>
